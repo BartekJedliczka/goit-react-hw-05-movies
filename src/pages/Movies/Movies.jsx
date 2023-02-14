@@ -1,10 +1,10 @@
 import { useSearchParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { BsSearch } from 'react-icons/bs';
+// import { BsSearch } from 'react-icons/bs';
 import { fetchMovie } from '../../api/fetchApi';
 import { Loader } from '../../components/Loading/Loading';
 import MovieList from 'components/MovieList/MovieList';
-import style from './Movies.module.scss';
+import css from './Movies.module.css';
 
 const Movies = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -42,18 +42,18 @@ const Movies = () => {
 
   return (
     <>
-      <form className={style.form} onSubmit={handleSubmit}>
+      <form className={css.form} onSubmit={handleSubmit}>
         <input
           type="text"
           name="query"
-          className={style.input}
+          className={css.input}
           value={inputSearch}
           onChange={handleInput}
           placeholder="Enter movie name"
         />
-        <button type="submit" className={style.button}>
-          <BsSearch size={14} />
-          <span className={style.buttonLabel}> Search</span>
+        <button type="submit" className={css.button}>
+          {/* <BsSearch size={14} /> */}
+          <span className={css.buttonLabel}> Search</span>
         </button>
       </form>
       {showLoading && <Loader />}
