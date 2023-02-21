@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import css from './Additional.module.css';
+import css from './AdditionalLinks.module.css';
 
 const AdditionalItems = [
   { href: 'cast', text: 'Cast' },
