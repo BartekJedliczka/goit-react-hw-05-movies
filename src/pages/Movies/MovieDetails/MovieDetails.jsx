@@ -1,8 +1,8 @@
 import { useState, useEffect, Suspense } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
-import { fetchMovie } from '../../../api/fetchApi';
-import Additional from '../../../components/Additional/Additional';
+import { fetchMovie } from '../../../api/api';
+import Additional from '../../../components/AdditionalLinks/AdditionalLinks';
 import InfoMovie from '../../../components/InfoMovie/InfoMovie';
 import GoBackButton from '../../../components/GoBackButton/GoBackButton';
 import { Loader } from '../../../components/Loading/Loading';

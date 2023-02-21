@@ -1,7 +1,6 @@
 import { useSearchParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-// import { BsSearch } from 'react-icons/bs';
-import { fetchMovie } from '../../api/fetchApi';
+import { fetchMovie } from '../../api/api';
 import { Loader } from '../../components/Loading/Loading';
 import MovieList from 'components/MovieList/MovieList';
 import css from './Movies.module.css';
@@ -52,7 +51,6 @@ const Movies = () => {
           placeholder="Enter movie name"
         />
         <button type="submit" className={css.button}>
-          {/* <BsSearch size={14} /> */}
           <span className={css.buttonLabel}> Search</span>
         </button>
       </form>
