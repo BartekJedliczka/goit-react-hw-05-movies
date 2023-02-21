@@ -1,0 +1,16 @@
+.title {
+  margin-bottom: 10px;
+}
+
+.item {
+  display: block;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.link:hover,
+.link:focus {
+  color: red;
+}
