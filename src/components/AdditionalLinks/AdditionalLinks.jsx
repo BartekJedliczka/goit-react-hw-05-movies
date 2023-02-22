@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import css from './AdditionalLinks.module.css';
 
@@ -7,7 +7,8 @@ const AdditionalItems = [
   { href: 'reviews', text: 'Reviews' },
 ];
 
-const Additional = ({ location }) => {
+const Additional = () => {
+  const location = useLocation();
   return (
     <div>
       <h4 className={css.title}>Addititonal information</h4>
